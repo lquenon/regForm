@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire d'enregistrement</title>
+    <!-- lien vers le fichier css -->
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <form>
-        <h1>Formulaire d'enregistrement</h1>
-        <p>Veuillez remplir ce formukaire pour vous enregistrer</p>
-        <hr/>
+        <!-- ajout d'un élément non sémantique afin
+        de structurer notre formulaire et appliquer
+        des règles css spécifiques -->
+        <div class="container">
+            <h1>Formulaire d'enregistrement</h1>
+            <p>Veuillez remplir ce formukaire pour vous enregistrer</p>
+            <hr/>
 
-        <label for="un">Prénom</label>
-        <input type="text" placeholder="Entrez ici votre nom d'utilisateur" name="un" id="un" required>
+            <label for="un">Prénom</label>
+            <input type="text" placeholder="Entrez ici votre nom d'utilisateur" name="un" id="un" required>
 
-        <label for="pwd">Mot de passe</label>
-        <input type="text" placeholder="Entrez ici le mot de passe" name="pwd" id="pwd" required>
+            <label for="pwd">Mot de passe</label>
+            <input type="password" placeholder="Entrez ici le mot de passe" name="pwd" id="pwd" required>
 
-        <label for="cpwd">Confirmation mot de passe</label>
-        <input type="text" placeholder="Confirmez ici le mot de passe" name="cpwd" id="cpwd" required>
-        <hr>
-
-        <button type="submit">S'enregistrer</button>
+            <label for="cpwd">Confirmation mot de passe</label>
+            <input type="password" placeholder="Confirmez ici le mot de passe" name="cpwd" id="cpwd" required>
+            <hr>
+            <!-- ajout d'une classe pour appliquer des règles
+            css spécifiques -->
+            <button type="submit" class="registerbtn">S'enregistrer</button>
+        </div>
     </form>   
 </body>
 </html>
