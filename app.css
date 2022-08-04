@@ -1,0 +1,58 @@
+/* partie du css pour tout ce qui concerne
+   la balise body et son contenu
+*/
+body {
+    background-color: teal;
+    width: 100%;
+}
+
+
+/* concerne tous les éléments */
+* {
+    box-sizing: border-box;
+}
+
+/* concerne les éléments de la classe container */
+.container {
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+/* concerne les éléments ayant un attribut type 'text'
+   ou 'password'
+*/
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;
+}
+
+
+/* concerne les éléments ayant un attribut type 'text'
+   ou 'password' mais seulement si ils ont le focus
+*/
+input[type='text']:focus,
+input[type='password']:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* concerne les éléments de la classe registerbtn */
+
+.registerbtn {
+    background-color: teal;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+    cursor: pointer;
+    border:none;
+    opacity: 0.8;
+}
